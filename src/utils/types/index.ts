@@ -1,4 +1,4 @@
-import { HTMType, TState } from "iares";
+import { HTMType, TState } from 'iares';
 
 export type TemplateType<T extends Object> = { (params: T): HTMType | HTMType[] };
 export type PropsType<T extends Object> = T;

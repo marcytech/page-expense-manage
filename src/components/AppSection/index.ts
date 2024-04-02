@@ -1,9 +1,9 @@
-import { FamTitle, FamImage } from "fam-code-ui";
-import { html, css } from "iares";
-import { AppContainer } from "@/components/AppContainer";
-import { AppText } from "@/components/AppText";
-import { mediaQueries } from "@/services/mediaQueries";
-import { HTMType } from "iares";
+import { AppContainer } from '@/components/AppContainer';
+import { AppText } from '@/components/AppText';
+import { mediaQueries } from '@/services/mediaQueries';
+import { FamImage, FamTitle } from 'fam-code-ui';
+import { css, html } from 'iares';
+import { HTMType } from 'iares';
 
 type Props = {
   image: string;
@@ -72,46 +72,46 @@ const normalTemplate = ({ props }: Params) => html`
 `;
 
 const reverseTemplate = ({ props }: Params) => html`
-      <div class="grid grid-cols-12">
-        <div class="          
-          xxl-col-6 
-          xl-col-6 
-          lg-col-6 
-          sm-col-12 sm-row-start-1 
-          xs-col-12 xs-row-start-1
-        ">
-          <div class="section-image-ctx">
-            <${FamImage} 
-              src="${props.image}" 
-              fallbackSrc="/assets/images/404.png"
-              alt="${props.title}" 
-            />         
-          </div>  
-        </div>
+  <div class="grid grid-cols-12">
+    <div class="          
+      xxl-col-6 
+      xl-col-6 
+      lg-col-6 
+      sm-col-12 sm-row-start-1 
+      xs-col-12 xs-row-start-1
+    ">
+      <div class="section-image-ctx">
+        <${FamImage} 
+          src="${props.image}" 
+          fallbackSrc="/assets/images/404.png"
+          alt="${props.title}" 
+        />         
+      </div>  
+    </div>
 
-        <div class="
-          xxl-col-6 
-          xl-col-6 
-          lg-col-6 
-          sm-col-12 sm-row-start-2
-          xs-col-12 xs-row-start-2
-        ">
-          <div class="section-title-area-ctx">
-            <${FamTitle}>
-              <slot target="content" ctx="app-section">
-                <h2 class="section-title-ctx">${props.title}</h2>
-              </slot>
-            </>      
-          </div> 
-          <div class="section-text-area-ctx">
-            <${AppText}>
-              <slot target="content" ctx="app-section">
-                <p class="section-text-ctx">${props.text}</p>
-              </slot>
-            </>
-          </div>   
-        </div>
-      </div>
+    <div class="
+      xxl-col-6 
+      xl-col-6 
+      lg-col-6 
+      sm-col-12 sm-row-start-2
+      xs-col-12 xs-row-start-2
+    ">
+      <div class="section-title-area-ctx">
+        <${FamTitle}>
+          <slot target="content" ctx="app-section">
+            <h2 class="section-title-ctx">${props.title}</h2>
+          </slot>
+        </>      
+      </div> 
+      <div class="section-text-area-ctx">
+        <${AppText}>
+          <slot target="content" ctx="app-section">
+            <p class="section-text-ctx">${props.text}</p>
+          </slot>
+        </>
+      </div>   
+    </div>
+  </div>
 `;
 
 const template = ({ props }: Params) => html`

@@ -1,11 +1,11 @@
-import { html, css } from "iares";
-import { AppHeader } from "@/components/AppHeader";
-import { AppBanner } from "@/components/AppBanner";
-import { AppSection } from "@/components/AppSection";
-import { AppManage } from "@/components/AppManage";
-import { AppAccord } from "@/components/AppAccord";
-import { AppFlag } from "@/components/AppFlag";
-import { AppFooter } from "@/components/AppFooter";
+import { AppAccord } from '@/components/AppAccord';
+import { AppBanner } from '@/components/AppBanner';
+import { AppFlag } from '@/components/AppFlag';
+import { AppFooter } from '@/components/AppFooter';
+import { AppHeader } from '@/components/AppHeader';
+import { AppManage } from '@/components/AppManage';
+import { AppSection } from '@/components/AppSection';
+import { css, html } from 'iares';
 
 const template = () => html`
   <${AppHeader}/>

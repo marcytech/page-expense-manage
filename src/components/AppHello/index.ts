@@ -1,5 +1,5 @@
-import { FamButton } from "fam-code-ui";
-import { html, css } from "iares";
+import { FamButton } from 'fam-code-ui';
+import { css, html } from 'iares';
 
 const template = () => html`
     <h1>Hello Word</h1>

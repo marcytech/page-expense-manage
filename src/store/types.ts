@@ -1,4 +1,4 @@
-import { StateType } from "@/utils/types";
+import { StateType } from '@/utils/types';
 
 export type StoreType = {
   text: string;

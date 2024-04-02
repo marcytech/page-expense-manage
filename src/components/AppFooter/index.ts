@@ -1,9 +1,9 @@
-import { FamButton } from "fam-code-ui";
-import { html, css } from "iares";
-import { AppLogo } from "@/components/AppLogo";
-import { AppMenu } from "../AppMenu";
-import { AppContainer } from "../AppContainer";
-import { mediaQueries } from "@/services/mediaQueries";
+import { AppLogo } from '@/components/AppLogo';
+import { mediaQueries } from '@/services/mediaQueries';
+import { FamButton } from 'fam-code-ui';
+import { css, html } from 'iares';
+import { AppContainer } from '../AppContainer';
+import { AppMenu } from '../AppMenu';
 
 const media = mediaQueries();
 

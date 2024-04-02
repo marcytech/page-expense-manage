@@ -1,7 +1,7 @@
-import { FamButton, FamIcon } from "fam-code-ui";
-import { html, css, createState } from "iares";
+import { FamButton, FamIcon } from 'fam-code-ui';
+import { createState, css, html } from 'iares';
 
-import { mediaQueries } from "@/services/mediaQueries";
+import { mediaQueries } from '@/services/mediaQueries';
 
 const media = mediaQueries();
 
@@ -21,7 +21,7 @@ type TemplateParams = {
 const template = ({ state, actions }: TemplateParams) => html`
   <div class="wrap-ctx">
     <div 
-      class="button-ctx ${state.menuIsVisible ? "show" : "hide"}"
+      class="button-ctx ${state.menuIsVisible ? 'show' : 'hide'}"
       onClick=${actions.handleMenu}
     >
       <${FamIcon}
@@ -31,7 +31,7 @@ const template = ({ state, actions }: TemplateParams) => html`
     </div>
     
     <div 
-      class="button-ctx ${state.menuIsVisible ? "hide" : "show"}"
+      class="button-ctx ${state.menuIsVisible ? 'hide' : 'show'}"
       onClick=${actions.handleMenu}
     >
       <${FamIcon}
@@ -41,7 +41,7 @@ const template = ({ state, actions }: TemplateParams) => html`
     </div>
     
     <ul 
-      class="list-ctx ${state.menuIsVisible ? "show" : "hide"}"
+      class="list-ctx ${state.menuIsVisible ? 'show' : 'hide'}"
       onClick=${actions.handleMenu}
     >
       <li>

@@ -11,7 +11,7 @@
     "clear": "shx rm -rf ./dist ./coverage",
     "clear:coverage": "shx rm -rf ./coverage",
     "clear:dist": "shx rm -rf ./dist",
-    "lint": "rome format ./src --write && rome check ./src --verbose",
+    "lint": "pnpm dlx @biomejs/biome check --apply ./src",
     "build": "cross-env NODE_ENV=production && pnpm clear && node ./build.production.js && pnpm run start:prod",
     "dev": "cross-env NODE_ENV=development && pnpm start:dev",
     "test": "pnpm run clear:dist && node ./build.spec.coverage.js && mocha ./dist/**/*.spec.js",
@@ -26,17 +26,32 @@
     "start": "bun dev & bun serve"
   },
   "aliases": {
-    "@/store": ["./dist/store/index.ts"],
-    "@/components/*": ["./dist/components"],
-    "@/utils/*": ["./dist/utils"],
-    "@/services/*": ["./dist/services"],
-    "@/assets/*": ["./dist/assets"],
-    "@/mock/*": ["./dist/mock"]
+    "@/store": [
+      "./dist/store/index.ts"
+    ],
+    "@/components/*": [
+      "./dist/components"
+    ],
+    "@/utils/*": [
+      "./dist/utils"
+    ],
+    "@/services/*": [
+      "./dist/services"
+    ],
+    "@/assets/*": [
+      "./dist/assets"
+    ],
+    "@/mock/*": [
+      "./dist/mock"
+    ]
   },
   "nyc": {
-    "extension": [".ts"]
+    "extension": [
+      ".ts"
+    ]
   },
   "devDependencies": {
+    "@biomejs/biome": "1.4.1",
     "@esm-bundle/chai": "4.3.4-fix.0",
     "@microsoft/fetch-event-source": "^2.0.1",
     "@types/chai": "^4.3.4",
@@ -61,7 +76,6 @@
     "json-server": "^0.17.1",
     "mocha": "^10.2.0",
     "module-alias": "^2.2.2",
-    "rome": "^11.0.0",
     "run-when-changed": "^2.1.0",
     "shx": "^0.3.4",
     "sinon": "^15.0.2",

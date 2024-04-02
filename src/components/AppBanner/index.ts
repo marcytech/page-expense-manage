@@ -1,7 +1,7 @@
-import { FamButton, FamImage, FamTitle } from "fam-code-ui";
-import { html, css } from "iares";
-import { AppContainer } from "../AppContainer";
-import { mediaQueries } from "@/services/mediaQueries";
+import { mediaQueries } from '@/services/mediaQueries';
+import { FamButton, FamImage, FamTitle } from 'fam-code-ui';
+import { css, html } from 'iares';
+import { AppContainer } from '../AppContainer';
 
 const media = mediaQueries();
 
@@ -82,7 +82,6 @@ const styles = () => css`
   }
   .title-ctx{
     width:100%;
-    max-width:700px;
     margin: 0 auto;
     padding:0 !important;
     line-height:1.3em;
@@ -125,5 +124,4 @@ const styles = () => css`
       font-size:3em!important;
     }
   `)}  
-
 `;

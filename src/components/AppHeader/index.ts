@@ -1,9 +1,9 @@
-import { FamButton } from "fam-code-ui";
-import { html, css } from "iares";
-import { AppLogo } from "@/components/AppLogo";
-import { AppContainer } from "@/components/AppContainer";
-import { AppMenu } from "@/components/AppMenu";
-import { mediaQueries } from "@/services/mediaQueries";
+import { AppContainer } from '@/components/AppContainer';
+import { AppLogo } from '@/components/AppLogo';
+import { AppMenu } from '@/components/AppMenu';
+import { mediaQueries } from '@/services/mediaQueries';
+import { FamButton } from 'fam-code-ui';
+import { css, html } from 'iares';
 
 const media = mediaQueries();
 
@@ -12,7 +12,7 @@ const template = () => html`
     <${AppContainer}>
       <slot target="content" ctx="app-header">
         <div class="grid grid-cols-12">
-          <div class="xxl-col-2 xl-col-2 lg-col-2 sm-col-3 xs-col-4">
+          <div class="xxl-col-2 xl-col-2 lg-col-2 sm-col-3 xs-col-5">
             <${AppLogo}/>
           </div>
           <div class="xxl-col-8 xl-col-8 lg-col-8 sm-col-9 xs-col-8">

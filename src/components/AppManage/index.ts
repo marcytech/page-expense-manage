@@ -1,7 +1,7 @@
-import { FamButton, FamTitle, FamImage } from "fam-code-ui";
-import { html, css } from "iares";
-import { AppContainer } from "../AppContainer";
-import { AppText } from "@/components/AppText";
+import { AppText } from '@/components/AppText';
+import { FamImage, FamTitle } from 'fam-code-ui';
+import { css, html } from 'iares';
+import { AppContainer } from '../AppContainer';
 
 const template = () => html`
   <${AppContainer}>

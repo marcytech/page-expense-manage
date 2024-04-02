@@ -1,20 +1,20 @@
-import { render, html } from 'iares';
+import { html, render } from 'iares';
 
 export type Options = {
   title: string;
   stylePath?: string;
   lang?: string;
-}
+};
 
 const renderStyle = (filePath: string) => {
-  if(!filePath) return ''
-  return /*html*/`<link rel="stylesheet" href="${filePath}">`
-}
+  if (!filePath) return '';
+  return /*html*/ `<link rel="stylesheet" href="${filePath}">`;
+};
 
-export default  (componentFactory: Function, options: Options) => {
-  return /*html*/`
+export default (componentFactory: Function, options: Options) => {
+  return /*html*/ `
     <!DOCTYPE html>
-    <html lang="${options?.lang||'pt-BR'}">
+    <html lang="${options?.lang || 'pt-BR'}">
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,5 +50,5 @@ export default  (componentFactory: Function, options: Options) => {
       </script>
     </body>
     </html>
-  `
-}
+  `;
+};

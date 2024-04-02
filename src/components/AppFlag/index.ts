@@ -1,7 +1,6 @@
-import { FamButton, FamTitle } from "fam-code-ui";
-import { html, css } from "iares";
-import { AppContainer } from "../AppContainer";
-import { mediaQueries } from "@/services/mediaQueries";
+import { mediaQueries } from '@/services/mediaQueries';
+import { FamButton, FamTitle } from 'fam-code-ui';
+import { css, html } from 'iares';
 
 const media = mediaQueries();
 

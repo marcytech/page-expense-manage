@@ -1,5 +1,4 @@
-import { FamButton } from "fam-code-ui";
-import { html, css } from "iares";
+import { css, html } from 'iares';
 
 const template = () => html`
   <div class="wrap-ctx">
